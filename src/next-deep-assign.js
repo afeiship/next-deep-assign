@@ -2,7 +2,6 @@
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
   var OBJECT_TYPE = '[object Object]';
-  var OBJECT = 'object';
   var toString = Object.prototype.toString;
 
   function assign(inTarget, inSrc) {
