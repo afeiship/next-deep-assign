@@ -1,25 +1,21 @@
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
-  var ARRAY_TYPE = '[object Array]';
+  var OBJECT_TYPE = '[object Object]';
   var OBJECT = 'object';
   var toString = Object.prototype.toString;
 
   function assign(inTarget, inSrc) {
     nx.forIn(inSrc, function(key, value) {
-      if (value == null) {
-        inTarget[key] = value;
-      } else {
-        if (typeof value === OBJECT) {
-          if (toString.call(value) === ARRAY_TYPE) {
-            inTarget[key] = value;
-          } else {
-            inTarget[key] = inTarget[key] || {};
-            assign(inTarget[key], value);
-          }
-        } else {
+      var type = toString.call(value);
+      switch (type) {
+        case OBJECT_TYPE:
+          inTarget[key] = inTarget[key] || {};
+          assign(inTarget[key], value);
+          break;
+        default:
           inTarget[key] = value;
-        }
+          break;
       }
     });
   }
