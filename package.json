@@ -27,10 +27,11 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^2.1.2",
     "jest": "^23.6.0",
-    "yargs": "^4.7.1",
-    "uglify-save-license": "^0.4.1",
+    "next-nice-comments": "github:afeiship/next-nice-comments",
     "prettier": "^1.14.3",
-    "next-nice-comments": "github:afeiship/next-nice-comments"
+    "rake-git": "github:afeiship/rake-git",
+    "uglify-save-license": "^0.4.1",
+    "yargs": "^4.7.1"
   },
   "dependencies": {
     "next-js-core2": "github:afeiship/next-js-core2"
