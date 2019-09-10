@@ -27,6 +27,7 @@ describe('api test', () => {
     };
     var obj2 = {
       lineHeight: 100,
+      left: null,
       style: {
         items: [1, 2, 3],
         fontFamily: 'Arial'
@@ -37,7 +38,7 @@ describe('api test', () => {
 
     expect(result).toEqual({
       lineHeight: 100,
-      left: 'center',
+      left: null,
       style: {
         items: [1, 2, 3],
         fontSize: 24,
