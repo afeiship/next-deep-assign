@@ -2,7 +2,7 @@
  * name: next-deep-assign
  * url: https://github.com/afeiship/next-deep-assign
  * version: 1.0.0
- * date: 2019-09-10T14:50:57.974Z
+ * date: 2019-09-11T06:31:45.566Z
  * license: MIT
  */
 
@@ -10,6 +10,7 @@
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
   var OBJECT_TYPE = '[object Object]';
+  var OBJECT_UNDEF = '[object Undefined]';
   var toString = Object.prototype.toString;
 
   function assign(inTarget, inSrc) {
@@ -19,6 +20,8 @@
         case OBJECT_TYPE:
           inTarget[key] = inTarget[key] || {};
           assign(inTarget[key], value);
+          break;
+        case OBJECT_UNDEF:
           break;
         default:
           inTarget[key] = value;
