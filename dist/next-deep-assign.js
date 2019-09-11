@@ -2,7 +2,7 @@
  * name: next-deep-assign
  * url: https://github.com/afeiship/next-deep-assign
  * version: 1.0.0
- * date: 2019-09-11T06:31:45.566Z
+ * date: 2019-09-11T06:33:28.262Z
  * license: MIT
  */
 

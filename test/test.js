@@ -2,6 +2,30 @@ var nx = require('next-js-core2');
 require('../src/next-deep-assign');
 
 describe('api test', () => {
+  test('assign object - when undefined will do nothing', function() {
+    var obj1 = { name: 'fei' };
+    var obj2 = { email: '1290657123@qq.com', name: undefined };
+
+    var result = nx.deepAssign(obj1, obj2);
+
+    expect(result).toEqual({
+      name: 'fei',
+      email: '1290657123@qq.com'
+    });
+  });
+
+  test('assign object - when null will override', function() {
+    var obj1 = { name: 'fei' };
+    var obj2 = { email: '1290657123@qq.com', name: null };
+
+    var result = nx.deepAssign(obj1, obj2);
+
+    expect(result).toEqual({
+      name: null,
+      email: '1290657123@qq.com'
+    });
+  });
+
   test('assign object - level1', function() {
     var obj1 = { name: 'fei' };
     var obj2 = { email: '1290657123@qq.com' };
