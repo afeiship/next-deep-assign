@@ -3,12 +3,12 @@
 
 ## installation
 ```bash
-npm install -S afeiship/next-deep-assign --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-deep-assign
 ```
 
 ## usage
 ```js
-import 'next-deep-assign';
+import '@feizheng/next-deep-assign';
 
 const obj1 = {
   lineHeight: 26,
@@ -45,6 +45,3 @@ const result = nx.deepAssign(obj1, obj2);
   }
 }
 ```
-
-## resources
-- https://github.com/sindresorhus/deep-assign/blob/master/index.js

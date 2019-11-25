@@ -1,14 +1,14 @@
 /*!
- * name: next-deep-assign
+ * name: @feizheng/next-deep-assign
  * url: https://github.com/afeiship/next-deep-assign
  * version: 1.0.0
- * date: 2019-09-11T06:33:28.262Z
+ * date: 2019-11-25T08:49:44.814Z
  * license: MIT
  */
 
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var OBJECT_TYPE = '[object Object]';
   var OBJECT_UNDEF = '[object Undefined]';
   var toString = Object.prototype.toString;

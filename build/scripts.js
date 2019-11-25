@@ -2,13 +2,14 @@
   'use strict';
 
   const gulp = require('gulp');
+  const nx = require('@feizheng/next-js-core2');
   const pkg = require('../package.json');
   const saveLicense = require('uglify-save-license');
   const $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  require('next-nice-comments');
+  require('@feizheng/next-nice-comments');
 
   const niceComments = nx.niceComments(
     [
