@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-deep-assign",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Deep assign for next.",
   "homepage": "https://github.com/afeiship/next-deep-assign",
   "author": {
@@ -15,9 +15,10 @@
   "main": "dist/next-deep-assign.js",
   "license": "MIT",
   "devDependencies": {
-    "@feizheng/next-nice-comments": "^1.0.1",
+    "@feizheng/gulp-pkg-header": "^1.0.2",
     "@feizheng/rake-git": "^1.2.1",
     "del": "^5.1.0",
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-debug": "^4.0.0",
     "gulp-header": "^2.0.9",

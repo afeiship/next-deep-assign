@@ -1,8 +1,9 @@
 /*!
  * name: @feizheng/next-deep-assign
+ * description: Deep assign for next.
  * url: https://github.com/afeiship/next-deep-assign
- * version: 1.0.0
- * date: 2019-11-25T08:49:44.814Z
+ * version: 1.1.3
+ * date: 2020-03-27 13:17:30
  * license: MIT
  */
 

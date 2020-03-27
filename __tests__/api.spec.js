@@ -1,7 +1,7 @@
 const nx = require('@feizheng/next-js-core2');
 require('../src/next-deep-assign');
 
-describe('api test', () => {
+describe('api.basic test', () => {
   test('assign object - when undefined will do nothing', function() {
     var obj1 = { name: 'fei' };
     var obj2 = { email: '1290657123@qq.com', name: undefined };
