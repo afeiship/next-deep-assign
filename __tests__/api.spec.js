@@ -1,8 +1,11 @@
 const nx = require('@feizheng/next-js-core2');
+const ProxyAgent = require('proxy-agent');
+const isPlainObject = global.isPlainObject || require('is-plain-object');
+
 require('../src/next-deep-assign');
 
 describe('api.basic test', () => {
-  test('assign object - when undefined will do nothing', function() {
+  test('assign object - when undefined will do nothing', function () {
     var obj1 = { name: 'fei' };
     var obj2 = { email: '1290657123@qq.com', name: undefined };
 
@@ -14,7 +17,7 @@ describe('api.basic test', () => {
     });
   });
 
-  test('assign object - when null will override', function() {
+  test('assign object - when null will override', function () {
     var obj1 = { name: 'fei' };
     var obj2 = { email: '1290657123@qq.com', name: null };
 
@@ -26,7 +29,7 @@ describe('api.basic test', () => {
     });
   });
 
-  test('assign object - level1', function() {
+  test('assign object - level1', function () {
     var obj1 = { name: 'fei' };
     var obj2 = { email: '1290657123@qq.com' };
 
@@ -38,7 +41,7 @@ describe('api.basic test', () => {
     });
   });
 
-  test('assign object - level2', function() {
+  test('assign object - level2', function () {
     var obj1 = {
       lineHeight: 26,
       left: 'center',
@@ -72,4 +75,22 @@ describe('api.basic test', () => {
       }
     });
   });
+
+
+  test('proxy agent will not deep mixed', () => {
+    var options = {
+      method: 'post', body: { zx: 1 },
+      headers: {
+        token: 'SFsNnLAnFHAWeuUXKtY04IWLcyxXOKl4hwm96kqyCss_'
+      }
+    };
+    var agent = new ProxyAgent('http://37.232.125.90:8080');
+    var config = nx.deepAssign(options, { headers: { ua: 'xxx' }, agent });
+
+    expect(
+      isPlainObject(config.agent)
+    ).toBe(false)
+  });
+
+
 });

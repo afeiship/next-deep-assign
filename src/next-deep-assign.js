@@ -1,19 +1,19 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
-  var OBJECT_TYPE = '[object Object]';
+  var isPlainObject = global.isPlainObject || require('is-plain-object');
   var OBJECT_UNDEF = '[object Undefined]';
   var toString = Object.prototype.toString;
 
   function assign(inTarget, inSrc) {
-    nx.forIn(inSrc, function(key, value) {
+    nx.forIn(inSrc, function (key, value) {
       var type = toString.call(value);
-      switch (type) {
-        case OBJECT_TYPE:
+      switch (true) {
+        case isPlainObject(value):
           inTarget[key] = inTarget[key] || {};
           assign(inTarget[key], value);
           break;
-        case OBJECT_UNDEF:
+        case type === OBJECT_UNDEF:
           break;
         default:
           inTarget[key] = value;
@@ -22,10 +22,10 @@
     });
   }
 
-  nx.deepAssign = function(inTarget) {
+  nx.deepAssign = function (inTarget) {
     var args = nx.slice(arguments, 1);
     var target = inTarget || {};
-    args.forEach(function(arg) {
+    args.forEach(function (arg) {
       assign(target, arg);
     });
     return target;
