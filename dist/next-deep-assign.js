@@ -2,8 +2,8 @@
  * name: @feizheng/next-deep-assign
  * description: Deep assign for next.
  * homepage: https://github.com/afeiship/next-deep-assign
- * version: 1.2.2
- * date: 2020-11-04T01:47:06.837Z
+ * version: 1.2.3
+ * date: 2020-11-04T13:07:08.949Z
  * license: MIT
  */
 

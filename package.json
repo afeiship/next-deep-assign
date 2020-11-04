@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-deep-assign",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Deep assign for next.",
   "homepage": "https://github.com/afeiship/next-deep-assign",
   "author": {
@@ -41,5 +41,11 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "deep",
+    "assign",
+    "recursive"
+  ]
 }
