@@ -2,15 +2,15 @@
  * name: @feizheng/next-deep-assign
  * description: Deep assign for next.
  * homepage: https://github.com/afeiship/next-deep-assign
- * version: 1.2.0
- * date: 2020-06-30T06:24:49.383Z
+ * version: 1.2.1
+ * date: 2020-11-04T01:29:00.133Z
  * license: MIT
  */
 
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
-  var isPlainObject = global.isPlainObject || require('is-plain-object');
+  var isPlainObject = nx.isPlainObject || require('@feizheng/next-is-plain-object');
   var OBJECT_UNDEF = '[object Undefined]';
   var toString = Object.prototype.toString;
 

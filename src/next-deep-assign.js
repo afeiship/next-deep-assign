@@ -1,7 +1,7 @@
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
-  var isPlainObject = global.isPlainObject || require('is-plain-object');
+  var isPlainObject = nx.isPlainObject || require('@feizheng/next-is-plain-object');
   var OBJECT_UNDEF = '[object Undefined]';
   var toString = Object.prototype.toString;
 

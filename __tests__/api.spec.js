@@ -1,7 +1,6 @@
 const nx = require('@feizheng/next-js-core2');
 const ProxyAgent = require('proxy-agent');
-const isPlainObject = global.isPlainObject || require('is-plain-object');
-
+const nxIsPainObject = require('@feizheng/next-is-plain-object');
 require('../src/next-deep-assign');
 
 describe('api.basic test', () => {
@@ -87,9 +86,7 @@ describe('api.basic test', () => {
     var agent = new ProxyAgent('http://37.232.125.90:8080');
     var config = nx.deepAssign(options, { headers: { ua: 'xxx' }, agent });
 
-    expect(
-      isPlainObject(config.agent)
-    ).toBe(false)
+    expect(nxIsPainObject(config.agent)).toBe(false);
   });
 
 
