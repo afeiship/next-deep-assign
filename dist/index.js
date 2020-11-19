@@ -3,7 +3,7 @@
  * description: Deep assign for next.
  * homepage: https://github.com/afeiship/next-deep-assign
  * version: 1.0.0
- * date: 2020-11-19 13:57:21
+ * date: 2020-11-19 14:01:22
  * license: MIT
  */
 

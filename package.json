@@ -40,5 +40,15 @@
   },
   "dependencies": {
     "@jswork/next-is-plain-object": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "next",
+    "deep",
+    "assign",
+    "recursive",
+    "mix",
+    "merge",
+    "defaults",
+    "mixin"
+  ]
 }
