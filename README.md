@@ -8,7 +8,7 @@
 
 ## installation
 ```bash
-npm install -S @feizheng/next-deep-assign
+npm install -S @jswork/next-deep-assign
 ```
 
 ## usage
@@ -54,14 +54,14 @@ const result = nx.deepAssign(obj1, obj2);
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-deep-assign/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/next-deep-assign
-[version-url]: https://npmjs.org/package/@feizheng/next-deep-assign
+[version-image]: https://img.shields.io/npm/v/@jswork/next-deep-assign
+[version-url]: https://npmjs.org/package/@jswork/next-deep-assign
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/next-deep-assign
+[license-image]: https://img.shields.io/npm/l/@jswork/next-deep-assign
 [license-url]: https://github.com/afeiship/next-deep-assign/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/next-deep-assign
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-deep-assign
 [size-url]: https://github.com/afeiship/next-deep-assign/blob/master/dist/next-deep-assign.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/next-deep-assign
-[download-url]: https://www.npmjs.com/package/@feizheng/next-deep-assign
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-deep-assign
+[download-url]: https://www.npmjs.com/package/@jswork/next-deep-assign

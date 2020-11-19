@@ -1,18 +1,11 @@
-/*!
- * name: @feizheng/next-deep-assign
- * description: Deep assign for next.
- * homepage: https://github.com/afeiship/next-deep-assign
- * version: 1.2.3
- * date: 2020-11-04T13:07:08.949Z
- * license: MIT
- */
-
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
-  var isPlainObject = nx.isPlainObject || require('@feizheng/next-is-plain-object');
+  var nx = global.nx || require('@jswork/next');
+  var isPlainObject = nx.isPlainObject || require('@jswork/next-is-plain-object');
   var OBJECT_UNDEF = '[object Undefined]';
   var toString = Object.prototype.toString;
+
+  // https://github.com/jonschlinkert/is-plain-object
 
   function assign(inTarget, inSrc) {
     nx.forIn(inSrc, function (key, value) {
@@ -44,5 +37,3 @@
     module.exports = nx.deepAssign;
   }
 })();
-
-//# sourceMappingURL=next-deep-assign.js.map
