@@ -13,7 +13,7 @@ npm install -S @jswork/next-deep-assign
 
 ## usage
 ```js
-import '@feizheng/next-deep-assign';
+import '@jswork/next-deep-assign';
 
 const obj1 = {
   lineHeight: 26,
