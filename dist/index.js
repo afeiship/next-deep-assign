@@ -2,8 +2,8 @@
  * name: @jswork/next-deep-assign
  * description: Deep assign for next.
  * homepage: https://github.com/afeiship/next-deep-assign
- * version: 1.0.1
- * date: 2021-01-06 21:48:35
+ * version: 1.0.2
+ * date: 2021-01-09 16:34:36
  * license: MIT
  */
 
