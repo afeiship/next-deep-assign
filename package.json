@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-deep-assign",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Deep assign for next.",
   "homepage": "https://js.work",
   "author": {
@@ -47,5 +47,15 @@
   },
   "dependencies": {
     "is-plain-obj": "3"
-  }
+  },
+  "keywords": [
+    "next",
+    "deep",
+    "assign",
+    "recursive",
+    "mix",
+    "merge",
+    "defaults",
+    "mixin"
+  ]
 }
