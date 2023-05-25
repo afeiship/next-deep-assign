@@ -32,7 +32,7 @@ nx.deepAssign = function (inTarget) {
   return target;
 };
 
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
   module.exports = nx.deepAssign;
 }
 
