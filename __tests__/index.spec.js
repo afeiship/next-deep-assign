@@ -1,4 +1,4 @@
-require('../src');
+import '../src';
 
 const ProxyAgent = require('proxy-agent');
 const isPlainObject = require('is-plain-obj');
